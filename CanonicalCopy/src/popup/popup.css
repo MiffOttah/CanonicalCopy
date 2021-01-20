@@ -1,0 +1,67 @@
+body {
+  background: white;
+  color: black;
+  width: 300px;
+}
+
+form {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr auto;
+}
+
+form > * {
+  display: block;
+  color: inherit;
+}
+
+input {
+  background: #eee;
+  width: 100%;
+  border: 1px solid black;
+}
+
+button {
+  width: 1.3em;
+  height: 1.3em;
+  margin-left: 1em;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  position: relative;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+svg path {
+  stroke: black;
+}
+
+svg .paper {
+  fill: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #222;
+    color: white;
+  }
+
+  input {
+    background: #444;
+  }
+
+  svg path {
+    stroke: white;
+  }
+
+  svg .paper {
+    fill: black;
+  }
+}
