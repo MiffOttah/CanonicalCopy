@@ -15,8 +15,7 @@ can copy with the copy button or Ctrl+C. It's that easy!
 
 ## Installation
 
-It's currently in the process of being sent to Daddy Google for permission to
-be used. Give it a bit.
+Wait a few weeks for Google to give it its blessing, then it will be usable.
 
 ## Legal mumbo jumbo
 
