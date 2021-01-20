@@ -36,7 +36,7 @@
     {
       "matches": [
         "http://*/*",
-        "https://*/*",
+        "https://*/*"
       ],
       "js": [
         "src/inject/inject.js"
