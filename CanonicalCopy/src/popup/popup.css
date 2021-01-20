@@ -47,6 +47,14 @@ svg .paper {
   fill: white;
 }
 
+.unavailable input {
+  font-style: italic;
+}
+
+.unavailable button {
+  visibility: hidden;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background: #222;

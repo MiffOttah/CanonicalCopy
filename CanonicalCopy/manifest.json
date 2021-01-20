@@ -13,7 +13,7 @@
   },
   "background": {
     "scripts": [
-      "src/bg/background.js"
+      "src/background.js"
     ],
     "persistent": false
   },
@@ -31,16 +31,5 @@
     },
     "default_title": "Copy Canonical URL",
     "default_popup": "src/popup/popup.html"
-  },
-  "content_scripts": [
-    {
-      "matches": [
-        "http://*/*",
-        "https://*/*"
-      ],
-      "js": [
-        "src/inject/inject.js"
-      ]
-    }
-  ]
+  }
 }

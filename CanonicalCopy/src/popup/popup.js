@@ -2,22 +2,33 @@
 
 window.addEventListener("DOMContentLoaded", () => {
   const urlField = document.getElementById("urlField");
+  let canCopy = false;
 
   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-    chrome.tabs.sendMessage(tabs[0].id, {getCanonicalUrl: true}, function(response) {
-      if (response && response.canonicalUrl){
-        urlField.value = response.canonicalUrl;
-        urlField.focus();
-        urlField.select();
-      }
-    });
+    if (!tabs[0] || !/^https?:/.test(tabs[0].url)){
+      document.querySelector("form").classList.add("unavailable");
+      urlField.value = "(Could not get URL)";
+    } else {
+      chrome.tabs.executeScript(
+        tabs[0].id,
+        {
+          code: '(function(){ const link = document.querySelector("link[rel=\'canonical\']"); return link && link.href ? link.href : ""+window.location; })()'
+        }, function(result) {
+          urlField.value = result;
+          urlField.focus();
+          urlField.select();
+        }
+      );
+      canCopy = true;
+    }
   });
 
   document.querySelector("form").addEventListener("submit", e => {
-    urlField.focus();
-    urlField.select();
-    document.execCommand("copy");
-
+    if (canCopy){
+      urlField.focus();
+      urlField.select();
+      document.execCommand("copy");
+    }
     e.preventDefault();
   });
 });
