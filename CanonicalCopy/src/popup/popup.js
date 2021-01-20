@@ -5,7 +5,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     chrome.tabs.sendMessage(tabs[0].id, {getCanonicalUrl: true}, function(response) {
-      if (response.canonicalUrl){
+      if (response && response.canonicalUrl){
         urlField.value = response.canonicalUrl;
         urlField.focus();
         urlField.select();
