@@ -1,6 +1,6 @@
 {
   "name": "CanonicalCopy",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "manifest_version": 2,
   "description": "Copy web links using their canonical URL",
   "homepage_url": "https://github.com/MiffOttah/CanonicalCopy",
@@ -19,7 +19,7 @@
   },
   "permissions": [
     "clipboardWrite",
-    "https://*/*"
+    "activeTab"
   ],
   "browser_action": {
     "default_icon": {
@@ -35,7 +35,8 @@
   "content_scripts": [
     {
       "matches": [
-        "https://*/*"
+        "http://*/*",
+        "https://*/*",
       ],
       "js": [
         "src/inject/inject.js"

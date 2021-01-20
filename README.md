@@ -13,11 +13,12 @@ When copying the URL, just click the CanonicalCopy icon instead of selecting
 the URL in the address bar. A popup will appear with the canonical URL that you
 can copy with the copy button or Ctrl+C. It's that easy!
 
-Installation: Idk I don't want to pay for a developer account. Anyone want to
-sideload this and let me know how it goes, or paypal me the money, or just upload
-it on your own account because it's GPL open source.
+## Installation
 
----
+It's currently in the process of being sent to Daddy Google for permission to
+be used. Give it a bit.
+
+## Legal mumbo jumbo
 
 Copyright © 2021 Miff
 
