@@ -9,13 +9,18 @@ for the page](https://www.semrush.com/blog/canonical-url-guide/). Since this
 URL can't be personalized to the user, it isn't full of analytics data or
 unnecessary session state.
 
+CanonicalCopy is an extension for Google Chrome and compatible browsers that
+allows you to copy this URL instead of the URL you're actively on full of
+useless session and tracking data.
+
 When copying the URL, just click the CanonicalCopy icon instead of selecting
 the URL in the address bar. A popup will appear with the canonical URL that you
 can copy with the copy button or Ctrl+C. It's that easy!
 
 ## Installation
 
-Wait a few weeks for Google to give it its blessing, then it will be usable.
+CanonicalCopy is now available on the Chrome Web Store! Find it here:
+https://chrome.google.com/webstore/detail/canonicalcopy/njjdfcofcbmmghmnhfjfmndhhdglclam
 
 ## Legal mumbo jumbo
 
