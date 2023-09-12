@@ -1,6 +1,6 @@
 {
   "name": "CanonicalCopy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "manifest_version": 2,
   "description": "Copy web links using their canonical URL",
   "homepage_url": "https://github.com/MiffOttah/CanonicalCopy",
@@ -31,5 +31,10 @@
     },
     "default_title": "Copy Canonical URL",
     "default_popup": "src/popup/popup.html"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{5cd43eed-5fac-4187-87f7-4b06f68d1c41}"
+    }
   }
 }
